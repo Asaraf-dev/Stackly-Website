@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Login</title>
+  <link rel="stylesheet" href="Css/auth.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body>
+  <video autoplay muted loop class="hero-bg">
+    <source src="Assets/Red Blue Abstract Background Video.mp4" type="video/mp4">
+  </video>
+  <div class="wrapper">
+    <div class="card">
+
+      <!-- HEADER -->
+      <div class="card-header">
+        <h3 id="brand">Stackly</h3>
+        <h2 id="title">Welcome</h2>
+        <p id="subtitle">Sign in to your account</p>
+      </div>
+
+      <!-- LOGIN FORM -->
+      <form class="form login-form active">
+
+        <label>Email Address</label>
+        <div class="input-box">
+          <i class="fa fa-envelope"></i>
+          <input type="email" placeholder="your.email@example.com">
+        </div>
+
+        <label>Password</label>
+        <div class="input-box">
+          <i class="fa fa-lock"></i>
+          <input type="password" placeholder="••••••••">
+        </div>
+
+        <div class="options">
+          <label><input type="checkbox"> Remember me</label>
+          <a href="#">Forgot password?</a>
+        </div>
+
+        <button type="button" class="btn">Sign In</button>
+
+        <p class="switch">
+          Don’t have an account?
+          <a href="#" id="showSignup">Create Account</a>
+        </p>
+      </form>
+
+      <!-- SIGNUP FORM -->
+      <form class="form signup-form">
+
+        <label>Full Name</label>
+        <div class="input-box">
+          <i class="fa fa-user"></i>
+          <input type="text" placeholder="Eren Yeager">
+        </div>
+
+        <label>Email Address</label>
+        <div class="input-box">
+          <i class="fa fa-envelope"></i>
+          <input type="email" placeholder="your.email@example.com">
+        </div>
+
+        <label>Password</label>
+        <div class="input-box">
+          <i class="fa fa-lock"></i>
+          <input type="password">
+        </div>
+
+        <label>Confirm Password</label>
+        <div class="input-box">
+          <i class="fa fa-lock"></i>
+          <input type="password">
+        </div>
+
+        <label class="terms">
+          <input type="checkbox">
+          I agree to the Terms and Conditions
+        </label>
+
+        <button type="button" class="btn">Create Account</button>
+
+        <p class="switch">
+          Already have an account?
+          <a href="#" id="showLogin">Sign In</a>
+        </p>
+      </form>
+
+    </div>
+  </div>
+
+  <script src="JS/auth.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>User Dashboard - Stackly</title>
+  <link rel="stylesheet" href="Css/styleuser.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+
+<!-- Top Navbar -->
+<header class="topbar">
+  <div class="logo">
+    <img src="Assets/stackly-white-1.png" alt="Stackly">
+  </div>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="services.html">Services</a>
+    <a href="#">Pricing</a>
+    <a href="faq.html">FAQ</a>
+
+    <div class="dropdown">
+      <a class="dropbtn">
+        Dashboard <i class="fa-solid fa-chevron-down arrow"></i>
+      </a>
+      <div class="dropdown-menu">
+        <a href="user-dashboard.html">User Dashboard</a>
+        <a href="admin-dashboard.html">Admin Dashboard</a>
+      </div>
+    </div>
+
+    <a href="contact.html">Contact</a>
+  </nav>
+
+  <div class="profile">
+    <img src="Assets/eren.jpg" alt="">
+    <span>Eren Yeager</span>
+  </div>
+</header>
+
+<!-- Sidebar -->
+<aside class="sidebar">
+  <a class="active"><i class="fa fa-chart-line"></i> Dashboard</a>
+  <a><i class="fa fa-desktop"></i> Websites</a>
+  <a><i class="fa fa-exchange-alt"></i> Transactions</a>
+  <a><i class="fab fa-houzz"></i> Hostings</a>
+  <a><i class="fa fa-bullseye"></i> Goals</a>
+  <a><i class="fa fa-file"></i> Reports</a>
+  <a><i class="fa fa-gear"></i> Settings</a>
+  <a class="logout" href="index.html"><i class="fa fa-sign-out-alt"></i> Logout</a>
+</aside>
+
+<!-- Main Content -->
+<main>
+  <h2>Welcome back, Eren!</h2>
+  <p class="sub">Here's what's happening with your Tech today.</p>
+
+  <!-- Portfolio -->
+  <div class="portfolio">
+    <div>
+      <h3>Portfolio Overview</h3>
+      <p>Your current WebSite Hosting performance</p>
+    </div>
+    <div class="amount">
+      $127,450.75
+      <span><i class="fa fa-circle"></i> Good</span>
+    </div>
+  </div>
+
+  <!-- Cards -->
+  <div class="cards">
+    <div class="card">
+      <h4>Total Revenue</h4>
+      <p>$85,230.50</p>
+    </div>
+    <div class="card income">
+      <h4>Ad Revenue</h4>
+      <p>$12,450.00</p>
+    </div>
+    <div class="card expense">
+      <h4>Hosting expanse</h4>
+      <p>$8,760.25</p>
+    </div>
+    <div class="card">
+      <h4>View Rate</h4>
+      <p>29.6%</p>
+    </div>
+  </div>
+
+  <!-- Transactions -->
+  <div class="box">
+    <h3>Recent Transactions</h3>
+    <table>
+      <tr>
+        <th>Description</th>
+        <th>Category</th>
+        <th>Date</th>
+        <th>Amount</th>
+      </tr>
+      <tr>
+        <td>Revenue Deposit</td>
+        <td>Income</td>
+        <td>Jun 15, 2025</td>
+        <td class="green">+ $5,200</td>
+      </tr>
+      <tr>
+        <td>NO.of.WebSite </td>
+        <td>Business</td>
+        <td>Jun 12, 2025</td>
+        <td class="red">38</td>
+      </tr>
+      <tr>
+        <td>API Bill</td>
+        <td>Cost</td>
+        <td>Jun 5, 2025</td>
+        <td class="red">- $145.00</td>
+      </tr>
+    </table>
+  </div>
+
+  <!-- Goals -->
+  <div class="box">
+    <h3>Top Website Views</h3>
+
+    <div class="goal">
+      <span>W-Rating.com</span>
+      <div class="progress"><div style="width:60%"></div></div>
+      <small>+60%</small>
+    </div>
+
+    <div class="goal">
+      <span>Tamil.in</span>
+      <div class="progress green"><div style="width:54%"></div></div>
+      <small>+54%</small>
+    </div>
+
+    <div class="goal">
+      <span>IDBM.com</span>
+      <div class="progress"><div style="width:38%"></div></div>
+      <small>+38</small>
+    </div>
+  </div>
+
+</main>
+
+</body>
+</html>
