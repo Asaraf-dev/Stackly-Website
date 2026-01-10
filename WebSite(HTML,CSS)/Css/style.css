@@ -556,6 +556,7 @@ nav a.active {
 }
 
 .icon-box img {
+    filter: invert(1);
     height: 50px;
     width: 50px;
 }
@@ -840,6 +841,7 @@ nav a.active {
     animation: bounce 1.5s infinite ease-in-out;
 }
 .icon img {
+    filter: invert(1);
     width: 30px;
     height: 30px;
 }
@@ -906,6 +908,7 @@ nav a.active {
     font-size: 24px;
   }
   .value-icon img{
+    filter: invert(1);
     width: 30px;
     height: 30px;
   }
@@ -1897,7 +1900,11 @@ tbody tr:hover {
 }
 
 .footer-col img {
+    filter: invert(1);
     width: 20px;
     height: 20px;
-    border-radius: 50%;
+    
+}
+.footer-col a:hover {
+    color: #86acff;
 }
