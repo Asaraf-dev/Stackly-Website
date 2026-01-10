@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>User Dashboard - Stackly</title>
+  <link rel="stylesheet" href="Css/styleuser.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+
+<!-- Top Navbar -->
+<header class="topbar">
+  <div class="logo">
+    <img src="Assets/stackly-white-1.png" alt="Stackly">
+  </div>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="services.html">Services</a>
+    <a href="pricing.html">Pricing</a>
+    <a href="faq.html">FAQ</a>
+
+    <div class="dropdown">
+      <a class="dropbtn">
+        Dashboard <i class="fa-solid fa-chevron-down arrow"></i>
+      </a>
+      <div class="dropdown-menu">
+        <a href="user-dashboard.html">User Dashboard</a>
+        <a href="admin-dashboard.html">Admin Dashboard</a>
+      </div>
+    </div>
+
+    <a href="contact.html">Contact</a>
+  </nav>
+
+  <div class="profile">
+    <img src="Assets/eren.jpg" alt="">
+    <span>Eren Yeager</span>
+  </div>
+</header>
+
+<!-- Sidebar -->
+<aside class="sidebar">
+  <a href="user-dashboard.html"><i class="fa fa-chart-line"></i> Dashboard</a>
+  <a href="my-project.html" ><i class="fa fa-desktop"></i> My Project</a>
+  <a href="billing.html" class="active"><i class="fa fa-exchange-alt"></i> Transactions</a>
+  <a href="track-project.html"><i class="fa fa-calendar" aria-hidden="true"></i> Track Project</a>
+  <a href="updetes.html"><i class="fa fa-pencil-square" aria-hidden="true"></i> Updates</a>
+  <a class="logout" href="index.html"><i class="fa fa-sign-out-alt"></i> Logout</a>
+</aside>
+
+<!-- Main Content -->
+<main>
+
+    <div class="billing">
+
+        <!-- Header -->
+        <div class="billing-header">
+          <h1>📄 Billing</h1>
+          <p>Manage your payments and view all your invoices in one place.</p>
+        </div>
+      
+        <!-- Top Cards -->
+        <div class="billing-cards">
+      
+          <div class="card billing-card">
+            <h3>📑 View Invoices</h3>
+            <p>Check and manage all your invoices easily.</p>
+          </div>
+      
+          <div class="card billing-card">
+            <h3>⬇ Download Payment Receipts</h3>
+            <p>Download and save your payment receipts.</p>
+          </div>
+      
+          <div class="card billing-card">
+            <h3>🔍 Check Payment Status</h3>
+            <p>Check if your invoices are paid or pending.</p>
+          </div>
+      
+        </div>
+      
+        <!-- Table Header -->
+        <div class="table-header">
+          <h3>Recent Invoices</h3>
+      
+          <div class="table-actions">
+            <input type="text" placeholder="Search" />
+            <select>
+              <option>All</option>
+              <option>Paid</option>
+              <option>Pending</option>
+              <option>Overdue</option>
+            </select>
+            <button class="download-btn">⬇ Download All</button>
+          </div>
+        </div>
+      
+        <!-- Invoice Table -->
+        <div class="table-wrapper">
+          <table>
+            <thead>
+              <tr>
+                <th>Invoice ID</th>
+                <th>Date</th>
+                <th>Amount</th>
+                <th>Status</th>
+                <th>Actions</th>
+              </tr>
+            </thead>
+      
+            <tbody>
+              <tr>
+                <td class="link">INV-1005</td>
+                <td>Apr 22, 2024</td>
+                <td>₹32,500</td>
+                <td><span class="badge paid">Paid</span></td>
+                <td><a href="#">View</a> | <a href="#">Download</a></td>
+              </tr>
+      
+              <tr>
+                <td class="link">INV-1004</td>
+                <td>Apr 10, 2024</td>
+                <td>₹28,750</td>
+                <td><span class="badge paid">Paid</span></td>
+                <td><a href="#">View</a> | <a href="#">Download</a></td>
+              </tr>
+      
+              <tr>
+                <td class="link">INV-1003</td>
+                <td>Mar 28, 2024</td>
+                <td>₹45,000</td>
+                <td><span class="badge overdue">Overdue</span></td>
+                <td><a href="#">View</a> | <a href="#">Download</a></td>
+              </tr>
+      
+              <tr>
+                <td class="link">INV-1002</td>
+                <td>Mar 15, 2024</td>
+                <td>₹18,000</td>
+                <td><span class="badge paid">Paid</span></td>
+                <td><a href="#">View</a> | <a href="#">Download</a></td>
+              </tr>
+      
+              <tr>
+                <td class="link">INV-1001</td>
+                <td>Mar 01, 2024</td>
+                <td>₹24,500</td>
+                <td><span class="badge pending">Pending</span></td>
+                <td><a href="#">View</a> | <a href="#">Download</a></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      
+      </div>
+
+</main>
+
+</body>
+</html>

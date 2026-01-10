@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Admin Dashboard | NexusWealth</title>
+  <link rel="stylesheet" href="Css/admin-dashboard.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+
+<!-- Top Navbar -->
+<header class="topbar">
+    <div class="logo">
+      <img src="Assets/stackly-white-1.png" alt="Stackly">
+    </div>
+  
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="services.html">Services</a>
+      <a href="pricing.html">Pricing</a>
+      <a href="faq.html">FAQ</a>
+  
+      <div class="dropdown">
+        <a class="dropbtn">
+          Dashboard <i class="fa-solid fa-chevron-down arrow"></i>
+        </a>
+        <div class="dropdown-menu">
+          <a href="user-dashboard.html">User Dashboard</a>
+          <a href="admin-dashboard.html">Admin Dashboard</a>
+        </div>
+      </div>
+  
+      <a href="contact.html">Contact</a>
+    </nav>
+  
+    <div class="profile">
+      <img src="Assets/admin.jpg" alt="">
+      <span>Admin</span>
+      <i class="fa fa-chevron-down"></i>
+    </div>
+</header>
+<!-- ================= SIDEBAR ================= -->
+<aside class="sidebar">
+  <a href="admin-dashboard.html"><i class="fa fa-chart-pie"></i> Dashboard</a>
+  <a href="user-management.html" class="active"><i class="fa fa-user-shield"></i> User Management</a>
+  <a href="clients.html"><i class="fa fa-users"></i> Clients</a>
+  <a href="project-management.html"><i class="fa fa-file-lines"></i>Project Management</a>
+  <a href="analytics.html"><i class="fa fa-chart-bar"></i> Analytics</a>
+  <a class="logout" href="index.html"><i class="fa fa-sign-out-alt"></i> Logout</a>
+</aside>
+
+<!-- ================= MAIN CONTENT ================= -->
+<main>
+
+    <div class="admin-content">
+
+        <!-- Header -->
+        <div class="section-header">
+          <h2>👥 User Management</h2>
+          <p>
+            Manage all registered users efficiently. Control access, assign roles,
+            and maintain platform security from a centralized panel.
+          </p>
+        </div>
+      
+        <!-- Action Cards -->
+        <div class="admin-cards">
+      
+          <div class="admin-card">
+            <h4>👤 View Registered Users</h4>
+            <p>View and manage all users easily.</p>
+            <a href="#">View Users →</a>
+          </div>
+      
+          <div class="admin-card">
+            <h4>📋 Assign User Roles</h4>
+            <p>Assign roles (Admin, User, Manager).</p>
+            <a href="#">Manage Roles →</a>
+          </div>
+      
+          <div class="admin-card">
+            <h4>🔐 User Passwords</h4>
+            <p>Reset passwords for users.</p>
+            <a href="#">Deactivate →</a>
+          </div>
+      
+        </div>
+      
+        <!-- Table Header -->
+        <div class="table-header">
+          <h3>All Registered Users <span>(Total: 1,245)</span></h3>
+      
+          <div class="table-actions">
+            <input type="text" placeholder="Search" />
+            <select>
+              <option>All</option>
+              <option>Admin</option>
+              <option>User</option>
+              <option>Manager</option>
+            </select>
+            <button class="add-btn">+ Add User</button>
+          </div>
+        </div>
+      
+        <!-- Users Table -->
+        <div class="table-wrapper">
+          <table>
+            <thead>
+              <tr>
+                <th><input type="checkbox" /></th>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Role</th>
+                <th>Status</th>
+                <th>Last Login</th>
+                <th>Actions</th>
+              </tr>
+            </thead>
+      
+            <tbody>
+              <tr>
+                <td><input type="checkbox" /></td>
+                <td>John Smith</td>
+                <td>john@example.com</td>
+                <td><span class="role admin">Admin</span></td>
+                <td><span class="status active">Active</span></td>
+                <td>2 hours ago</td>
+                <td><a href="#">Edit</a> | <a href="#">Change Role</a> | <a href="#">Deactivate</a></td>
+              </tr>
+      
+              <tr>
+                <td><input type="checkbox" /></td>
+                <td>Sarah Johnson</td>
+                <td>sarah@example.com</td>
+                <td><span class="role manager">Manager</span></td>
+                <td><span class="status inactive">Deactivated</span></td>
+                <td>Apr 22, 2024, 10:17 AM</td>
+                <td><a href="#">Edit</a> | <a href="#">Activate</a> | <a href="#">Deactivate</a></td>
+              </tr>
+      
+              <tr>
+                <td><input type="checkbox" /></td>
+                <td>Michael Brown</td>
+                <td>michael@example.com</td>
+                <td><span class="role user">User</span></td>
+                <td><span class="status suspended">Suspended</span></td>
+                <td>Apr 20, 2024, 08:45 AM</td>
+                <td><a href="#">Edit</a> | <a href="#">Activate</a> | <a href="#">Deactivate</a></td>
+              </tr>
+      
+              <tr>
+                <td><input type="checkbox" /></td>
+                <td>Emily Davis</td>
+                <td>emily@example.com</td>
+                <td><span class="role user">User</span></td>
+                <td><span class="status active">Active</span></td>
+                <td>1 day ago</td>
+                <td><a href="#">Edit</a> | <a href="#">Activate</a> | <a href="#">Deactivate</a></td>
+              </tr>
+      
+              <tr>
+                <td><input type="checkbox" /></td>
+                <td>Robert Wilson</td>
+                <td>robert@example.com</td>
+                <td><span class="role manager">Manager</span></td>
+                <td><span class="status active">Active</span></td>
+                <td>Apr 22, 2024, 09:30 PM</td>
+                <td><a href="#">Edit</a> | <a href="#">Activate</a> | <a href="#">Deactivate</a></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      
+      </div>
+
+</main>
+
+</body>
+</html>

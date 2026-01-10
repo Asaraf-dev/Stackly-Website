@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Admin Dashboard | NexusWealth</title>
+  <link rel="stylesheet" href="Css/admin-dashboard.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+
+<!-- Top Navbar -->
+<header class="topbar">
+    <div class="logo">
+      <img src="Assets/stackly-white-1.png" alt="Stackly">
+    </div>
+  
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="services.html">Services</a>
+      <a href="pricing.html">Pricing</a>
+      <a href="faq.html">FAQ</a>
+  
+      <div class="dropdown">
+        <a class="dropbtn">
+          Dashboard <i class="fa-solid fa-chevron-down arrow"></i>
+        </a>
+        <div class="dropdown-menu">
+          <a href="user-dashboard.html">User Dashboard</a>
+          <a href="admin-dashboard.html">Admin Dashboard</a>
+        </div>
+      </div>
+  
+      <a href="contact.html">Contact</a>
+    </nav>
+  
+    <div class="profile">
+      <img src="Assets/admin.jpg" alt="">
+      <span>Admin</span>
+      <i class="fa fa-chevron-down"></i>
+    </div>
+</header>
+<!-- ================= SIDEBAR ================= -->
+<aside class="sidebar">
+  <a href="admin-dashboard.html"><i class="fa fa-chart-pie"></i> Dashboard</a>
+  <a href="user-management.html" ><i class="fa fa-user-shield"></i> User Management</a>
+  <a href="clients.html"  class="active"><i class="fa fa-users"></i> Clients</a>
+  <a href="project-management.html"><i class="fa fa-file-lines"></i>Project Management</a>
+  <a href="analytics.html" ><i class="fa fa-chart-bar"></i> Analytics</a>
+  <a class="logout" href="index.html"><i class="fa fa-sign-out-alt"></i> Logout</a>
+</aside>
+
+<!-- ================= MAIN CONTENT ================= -->
+<main>
+
+    <div class="client-dashboard">
+
+        <!-- Header -->
+        <div class="section-header">
+          <h2>👤 Client Dashboard</h2>
+          <p>
+            Track your projects, payments, and support updates in one place.
+          </p>
+        </div>
+      
+        <!-- Stats Cards -->
+        <div class="client-stats">
+      
+          <div class="client-card">
+            <span class="icon">📁</span>
+            <div>
+              <h4>My Projects</h4>
+              <h2>3</h2>
+              <p>Total assigned projects</p>
+            </div>
+          </div>
+      
+          <div class="client-card progress">
+            <span class="icon">🔵</span>
+            <div>
+              <h4>In Progress</h4>
+              <h2>2</h2>
+              <p>Active ongoing projects</p>
+            </div>
+          </div>
+      
+          <div class="client-card success">
+            <span class="icon">🟢</span>
+            <div>
+              <h4>Completed</h4>
+              <h2>1</h2>
+              <p>Finished projects</p>
+            </div>
+          </div>
+      
+          <div class="client-card warning">
+            <span class="icon">💰</span>
+            <div>
+              <h4>Total Paid</h4>
+              <h2>₹1,25,000</h2>
+              <p>Successful payments</p>
+            </div>
+          </div>
+      
+          <div class="client-card info">
+            <span class="icon">🎧</span>
+            <div>
+              <h4>Support Tickets</h4>
+              <h2>2</h2>
+              <p>1 pending response</p>
+            </div>
+          </div>
+      
+        </div>
+      
+        <!-- Quick Actions -->
+        <div class="client-actions">
+          <button class="btn">📁 View Projects</button>
+          <button class="btn">📄 View Invoices</button>
+          <button class="btn">💬 Contact Support</button>
+        </div>
+      
+      </div>
+
+</main>
+
+</body>
+</html>

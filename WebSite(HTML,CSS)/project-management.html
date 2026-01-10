@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Admin Dashboard | NexusWealth</title>
+  <link rel="stylesheet" href="Css/admin-dashboard.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+
+<!-- Top Navbar -->
+<header class="topbar">
+    <div class="logo">
+      <img src="Assets/stackly-white-1.png" alt="Stackly">
+    </div>
+  
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="services.html">Services</a>
+      <a href="pricing.html">Pricing</a>
+      <a href="faq.html">FAQ</a>
+  
+      <div class="dropdown">
+        <a class="dropbtn">
+          Dashboard <i class="fa-solid fa-chevron-down arrow"></i>
+        </a>
+        <div class="dropdown-menu">
+          <a href="user-dashboard.html">User Dashboard</a>
+          <a href="admin-dashboard.html">Admin Dashboard</a>
+        </div>
+      </div>
+  
+      <a href="contact.html">Contact</a>
+    </nav>
+  
+    <div class="profile">
+      <img src="Assets/admin.jpg" alt="">
+      <span>Admin</span>
+      <i class="fa fa-chevron-down"></i>
+    </div>
+</header>
+<!-- ================= SIDEBAR ================= -->
+<aside class="sidebar">
+  <a href="admin-dashboard.html"><i class="fa fa-chart-pie"></i> Dashboard</a>
+  <a href="user-management.html" ><i class="fa fa-user-shield"></i> User Management</a>
+  <a href="clients.html"><i class="fa fa-users"></i> Clients</a>
+  <a href="project-management.html" class="active"><i class="fa fa-file-lines"></i>Project Management</a>
+  <a href="analytics.html"><i class="fa fa-chart-bar"></i> Analytics</a>
+  <a class="logout" href="index.html"><i class="fa fa-sign-out-alt"></i> Logout</a>
+</aside>
+
+<!-- ================= MAIN CONTENT ================= -->
+<main>
+
+    <div class="project-management">
+
+        <!-- Header -->
+        <div class="section-header">
+          <h2>📁 Project Management</h2>
+          <p>
+            Efficiently manage all projects from creation to completion. Assign tasks,
+            monitor progress, and organize project resources in one centralized system.
+          </p>
+        </div>
+      
+        <!-- Overview Cards -->
+        <div class="overview-cards">
+      
+          <div class="overview-card">
+            <h4>Total Projects</h4>
+            <span class="count">48</span>
+          </div>
+      
+          <div class="overview-card pending">
+            <h4>Pending</h4>
+            <span class="count">12</span>
+          </div>
+      
+          <div class="overview-card progress">
+            <h4>In Progress</h4>
+            <span class="count">26</span>
+          </div>
+      
+          <div class="overview-card completed">
+            <h4>Completed</h4>
+            <span class="count">10</span>
+          </div>
+      
+        </div>
+      
+        <!-- Actions -->
+        <div class="project-actions">
+          <button class="btn primary">➕ Add New Project</button>
+          <button class="btn">📂 Upload Documents</button>
+        </div>
+      
+        <!-- Projects Table -->
+        <div class="table-wrapper">
+          <table>
+            <thead>
+              <tr>
+                <th>Project Name</th>
+                <th>Client</th>
+                <th>Priority</th>
+                <th>Status</th>
+                <th>Progress</th>
+                <th>Deadline</th>
+                <th>Actions</th>
+              </tr>
+            </thead>
+      
+            <tbody>
+              <tr>
+                <td>E-commerce Website</td>
+                <td>ABC Corp</td>
+                <td><span class="priority high">High</span></td>
+                <td><span class="status in-progress">In Progress</span></td>
+                <td>
+                  <div class="progress-bar">
+                    <div class="progress" style="width:65%"></div>
+                  </div>
+                  65%
+                </td>
+                <td>Nov 25, 2023</td>
+                <td class="actions">
+                  <a href="#">View</a>
+                  <a href="#">Edit</a>
+                  <a href="#">Assign</a>
+                </td>
+              </tr>
+      
+              <tr>
+                <td>Portfolio Website</td>
+                <td>John Doe</td>
+                <td><span class="priority medium">Medium</span></td>
+                <td><span class="status pending">Pending</span></td>
+                <td>—</td>
+                <td>Dec 10, 2023</td>
+                <td class="actions">
+                  <a href="#">View</a>
+                  <a href="#">Edit</a>
+                  <a href="#">Assign</a>
+                </td>
+              </tr>
+      
+              <tr>
+                <td>Mobile App</td>
+                <td>XYZ Ltd</td>
+                <td><span class="priority low">Low</span></td>
+                <td><span class="status completed">Completed</span></td>
+                <td>100%</td>
+                <td>Oct 01, 2023</td>
+                <td class="actions">
+                  <a href="#">View</a>
+                  <a href="#">Edit</a>
+                  <a href="#">Archive</a>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      
+      </div>
+
+</main>
+
+</body>
+</html>

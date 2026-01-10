@@ -12,6 +12,9 @@
 
 <body>
     <main>
+        <!-- Dust Canvas -->
+    <canvas id="dustCanvas"></canvas>
+
         <!-- Navbar -->
         <header id="navbar" class="navbar">
             <div class="logo">
@@ -21,7 +24,7 @@
                 <a class="active" href="index.html">Home</a>
                 <a href="about.html">About</a>
                 <a href="services.html">Services</a>
-                <a href="#">Pricing</a>
+                <a href="pricing.html">Pricing</a>
                 <a href="faq.html">FAQ</a>
 
                 <div class="dropdown">
@@ -48,7 +51,7 @@
             <h1>Innovating Digital Solutions That Power Your Business</h1>
             <p>Scalable IT services, cloud solutions, and secure software designed to accelerate your growth.</p>
             <div class="hero-buttons">
-                <button class="outline-btn">Explore Services</button>
+                <a href="services.html"><button class="outline-btn">Explore Services</button></a>
             </div>
         </section>
 
@@ -64,28 +67,28 @@
         </section>
         <section class="services-index">
             <div class="service-card-index">
-                <div class="icon"><img src="Assets/Website.png" alt=""></div>
+                <div class="icon"><i class="fa fa-desktop" aria-hidden="true"></i></div>
                 <h3>Web Development</h3>
                 <p>Custom, responsive, and high-performance websites built using modern technologies.</p>
-                <a href="#">Learn More → </a>
+                <a href="services.html">Learn More → </a>
             </div>
             <div class="service-card-index">
-                <div class="icon"><img src="Assets/Phone.png" alt=""></div>
+                <div class="icon"><i class="fa fa-mobile" aria-hidden="true"></i></div>
                 <h3>App Development</h3>
                 <p>Scalable Android, iOS, and cross-platform applications tailored to business needs.</p>
-                <a href="#">Learn More → </a>
+                <a href="services.html">Learn More → </a>
             </div>
             <div class="service-card-index">
-                <div class="icon"><img src="Assets/cybersecurity.png" alt=""></div>
+                <div class="icon"><i class="fa fa-lock" aria-hidden="true"></i></div>
                 <h3>Cybersecurity</h3>
                 <p>Protect systems and data with advanced security audits, monitoring, and compliance solutions.</p>
-                <a href="#">Learn More → </a>
+                <a href="services.html">Learn More → </a>
             </div>
             <div class="service-card-index">
-                <div class="icon"><img src="Assets/Phone.png" alt=""></div>
+                <div class="icon"><i class="fa fa-users" aria-hidden="true"></i></div>
                 <h3>IT Consulting</h3>
                 <p>Expert guidance to align technology strategies with business goals.</p>
-                <a href="#">Learn More → </a>
+                <a href="services.html">Learn More → </a>
             </div>
 
         </section>
@@ -126,41 +129,7 @@
             </div>
         </section>
 
-        <!-- Testimonials -->
-        <section class="testimonials">
-            <h2>What Clients Think</h2>
-            <p class="subtitle">Hear from our clients about how our technology solutions helped improve performance,
-                efficiency, and business growth.</p>
-            <div class="testimonial-wrapper">
-                <!---Card 1-->
-                <div class="testimonial-card">
-                    <img src="Assets/user1.jpg" alt="">
-                    <h4>Ramesh Kumar</h4>
-                    <span>Business Owner</span>
-                    <p>The team delivered a high-quality website that exceeded our expectations. Their
-                        professionalism and technical expertise were impressive.</p>
-                    <div class="stars">★★★★★</div>
-                </div>
-                <!---Card 2-->
-                <div class="testimonial-card">
-                    <img src="Assets/user2.png" alt="">
-                    <h4>Priya Sharma</h4>
-                    <span>Project Manager</span>
-                    <p>Excellent IT solutions and great support. They understood our requirements clearly and
-                        delivered the project on time.</p>
-                    <div class="stars">★★★★★</div>
-                </div>
-                <!---Card 3-->
-                <div class="testimonial-card">
-                    <img src="Assets/user3.jfif" alt="">
-                    <h4>Arun Dev</h4>
-                    <span>Operations Head</span>
-                    <p>EReliable, secure, and scalable software solutions. We highly recommend them for any business
-                        looking to grow digitally.</p>
-                    <div class="stars">★★★★★</div>
-                </div>
-            </div>
-        </section>
+        
     </main>
 
         <!--Stats-->
@@ -203,7 +172,7 @@
 
                 <div class="feature-box">
                     <div class="icon-box">
-                        <img class="icon-img" src="Assets/Team.png">
+                        <i class="fa fa-users" aria-hidden="true"></i>
                     </div>
                     <h4>Experienced Team</h4>
                     <p>Our skilled professionals bring strong technical knowledge and industry experience to
@@ -283,6 +252,41 @@
 
             </div>
         </section>
+        <!-- Testimonials -->
+    <section class="testimonials">
+        <h2>What Clients Think</h2>
+        <p class="subtitle">Hear from our clients about how our technology solutions helped improve performance,
+            efficiency, and business growth.</p>
+        <div class="testimonial-wrapper">
+            <!---Card 1-->
+            <div class="testimonial-card">
+                <img src="Assets/user1.jpg" alt="">
+                <h4>Ramesh Kumar</h4>
+                <span>Business Owner</span>
+                <p>The team delivered a high-quality website that exceeded our expectations. Their
+                    professionalism and technical expertise were impressive.</p>
+                <div class="stars">★★★★★</div>
+            </div>
+            <!---Card 2-->
+            <div class="testimonial-card">
+                <img src="Assets/user2.png" alt="">
+                <h4>Priya Sharma</h4>
+                <span>Project Manager</span>
+                <p>Excellent IT solutions and great support. They understood our requirements clearly and
+                    delivered the project on time.</p>
+                <div class="stars">★★★★★</div>
+            </div>
+            <!---Card 3-->
+            <div class="testimonial-card">
+                <img src="Assets/user3.jfif" alt="">
+                <h4>Arun Dev</h4>
+                <span>Operations Head</span>
+                <p>EReliable, secure, and scalable software solutions. We highly recommend them for any business
+                    looking to grow digitally.</p>
+                <div class="stars">★★★★★</div>
+            </div>
+        </div>
+    </section>
 
         <!-- CTA -->
         <section class="cta">
@@ -292,8 +296,8 @@
                     success.</p>
 
                 <div class="cta-buttons">
-                    <a href="#" class="btn primary-btn">Get Started Today</a>
-                    <a href="#" class="btn outline-btn">View Pricing Plans</a>
+                    <a href="contact.html"><button class="cta-btn"> Started Today</button></a>
+                    <a href="pricing.html"><button class="cta-btn">View Pricing Plans</button></a>
                 </div>
             </div>
         </section>
@@ -320,11 +324,11 @@
             <div class="footer-col">
                 <h4>Quick Links</h4>
                 <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About Us</a></li>
-                    <li><a href="#">Services</a></li>
-                    <li><a href="#">Pricing</a></li>
-                    <li><a href="#">Contact</a></li>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="pricing.html">Pricing</a></li>
+                    <li><a href="contact.html">Contact</a></li>
                 </ul>
             </div>
 

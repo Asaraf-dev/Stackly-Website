@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>User Dashboard - Stackly</title>
+  <link rel="stylesheet" href="Css/styleuser.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+
+<!-- Top Navbar -->
+<header class="topbar">
+  <div class="logo">
+    <img src="Assets/stackly-white-1.png" alt="Stackly">
+  </div>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="services.html">Services</a>
+    <a href="pricing.html">Pricing</a>
+    <a href="faq.html">FAQ</a>
+
+    <div class="dropdown">
+      <a class="dropbtn">
+        Dashboard <i class="fa-solid fa-chevron-down arrow"></i>
+      </a>
+      <div class="dropdown-menu">
+        <a href="user-dashboard.html">User Dashboard</a>
+        <a href="admin-dashboard.html">Admin Dashboard</a>
+      </div>
+    </div>
+
+    <a href="contact.html">Contact</a>
+  </nav>
+
+  <div class="profile">
+    <img src="Assets/eren.jpg" alt="">
+    <span>Eren Yeager</span>
+  </div>
+</header>
+
+<!-- Sidebar -->
+<aside class="sidebar">
+  <a href="user-dashboard.html"><i class="fa fa-chart-line"></i> Dashboard</a>
+  <a href="my-project.html"><i class="fa fa-desktop"></i> My Project</a>
+  <a href="billing.html"><i class="fa fa-exchange-alt"></i> Transactions</a>
+  <a href="track-project.html"><i class="fa fa-calendar" aria-hidden="true"></i> Track Project</a>
+  <a href="updetes.html" class="active"><i class="fa fa-pencil-square" aria-hidden="true"></i> Updates</a>
+  <a class="logout" href="index.html"><i class="fa fa-sign-out-alt"></i> Logout</a>
+</aside>
+
+<!-- Main Content -->
+<main>
+    <div class="feedback-section">
+
+        <!-- Header -->
+        <div class="feedback-header">
+          <h3>💬 Submit Feedback & Updates</h3>
+          <p>Share feedback directly with the project team.</p>
+        </div>
+      
+        <div class="feedback-grid">
+      
+          <!-- Left Side -->
+          <div class="feedback-left">
+      
+            <!-- Action Cards -->
+            <div class="feedback-actions">
+      
+              <div class="action-card">
+                💡
+                <h4>Request a Feature</h4>
+                <p>Suggest new features and enhancements.</p>
+              </div>
+      
+              <div class="action-card">
+                🐞
+                <h4>Report a Bug</h4>
+                <p>Report any issues or bugs you've encountered.</p>
+              </div>
+      
+            </div>
+      
+            <!-- Feedback Box -->
+            <div class="feedback-box">
+              <label>Feedback</label>
+              <textarea placeholder="Write your feedback..."></textarea>
+              <button class="submit-btn">✈ Submit</button>
+            </div>
+      
+          </div>
+      
+          <!-- Right Side -->
+          <div class="feedback-right">
+      
+            <h4>Recent Responses</h4>
+      
+            <div class="response success">
+              ✔ Feature request added to roadmap! We plan to implement this feature by end of the month.
+            </div>
+      
+            <div class="response success">
+              ✔ Bug has been fixed. Please test and let us know if everything is working as expected.
+            </div>
+      
+            <a href="#" class="view-all">View All Responses →</a>
+      
+          </div>
+      
+        </div>
+      
+        <!-- Footer Actions -->
+        <div class="feedback-footer">
+          <span>💡 Request Feature</span>
+          <span>🐞 Report Bug</span>
+          <span>✅ Send Update</span>
+        </div>
+      
+      </div>
+</main>
+
+</body>
+</html>

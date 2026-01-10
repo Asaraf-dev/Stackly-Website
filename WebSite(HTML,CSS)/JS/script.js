@@ -84,3 +84,87 @@ const observer1 = new IntersectionObserver(
 );
 
 counters.forEach(counter => observer1.observe(counter));
+
+const canvas = document.getElementById("dustCanvas");
+const ctx = canvas.getContext("2d");
+
+canvas.width = window.innerWidth;
+canvas.height = window.innerHeight;
+let particles = [];
+const particleCount = 8;
+
+class Dust {
+    constructor() {
+        this.x = Math.random() * canvas.width;
+        this.y = Math.random() * canvas.height;
+
+        // Very small dust
+        this.size = Math.random() * 1.5 + 1;
+
+        // Slow cinematic movement
+        this.speedX = Math.random() * 0.4 - 0.2;
+        this.speedY = Math.random() * 0.4 - 0.2;
+
+        // Subtle opacity
+        this.opacity = Math.random() * 0.08 + 0.02;
+
+        // color
+        this.color='#1E88C8';
+    }
+
+    draw() {
+        ctx.beginPath();
+        ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2);
+        ctx.fillStyle = this.hexToRGBA(this.color, this.opacity);
+        ctx.fill();
+    }
+
+    update() {
+        this.x += this.speedX;
+        this.y += this.speedY;
+    
+        // 🔥 Direction-based color
+        if (this.speedX > 0.01) {
+            this.color = "#1E88C8"; // Blue
+        } else if(this.speedX<-0.01){
+            this.color = "#C4162A"; // Red
+        }
+    
+        if (this.x < 0) this.x = canvas.width;
+        if (this.x > canvas.width) this.x = 0;
+        if (this.y < 0) this.y = canvas.height;
+        if (this.y > canvas.height) this.y = 0;
+    }
+
+    hexToRGBA(hex, alpha) {
+        const r = parseInt(hex.substring(1, 3), 16);
+        const g = parseInt(hex.substring(3, 5), 16);
+        const b = parseInt(hex.substring(5, 7), 16);
+        return 'rgba(${r}, ${g}, ${b}, ${alpha})';
+    }
+}
+
+function initDust() {
+    particles = [];
+    for (let i = 0; i < particleCount; i++) {
+        particles.push(new Dust());
+    }
+}
+
+function animateDust() {
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
+    particles.forEach(p => {
+        p.update();
+        p.draw();
+    });
+    requestAnimationFrame(animateDust);
+}
+
+window.addEventListener("resize", () => {
+    canvas.width = window.innerWidth;
+    canvas.height = window.innerHeight;
+    initDust();
+});
+
+initDust();
+animateDust();

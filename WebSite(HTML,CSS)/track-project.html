@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>User Dashboard - Stackly</title>
+  <link rel="stylesheet" href="Css/styleuser.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+
+<!-- Top Navbar -->
+<header class="topbar">
+  <div class="logo">
+    <img src="Assets/stackly-white-1.png" alt="Stackly">
+  </div>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="services.html">Services</a>
+    <a href="pricing.html">Pricing</a>
+    <a href="faq.html">FAQ</a>
+
+    <div class="dropdown">
+      <a class="dropbtn">
+        Dashboard <i class="fa-solid fa-chevron-down arrow"></i>
+      </a>
+      <div class="dropdown-menu">
+        <a href="user-dashboard.html">User Dashboard</a>
+        <a href="admin-dashboard.html">Admin Dashboard</a>
+      </div>
+    </div>
+
+    <a href="contact.html">Contact</a>
+  </nav>
+
+  <div class="profile">
+    <img src="Assets/eren.jpg" alt="">
+    <span>Eren Yeager</span>
+  </div>
+</header>
+
+<!-- Sidebar -->
+<aside class="sidebar">
+  <a href="user-dashboard.html"><i class="fa fa-chart-line"></i> Dashboard</a>
+  <a href="my-project.html"><i class="fa fa-desktop"></i> My Project</a>
+  <a href="billing.html"><i class="fa fa-exchange-alt"></i> Transactions</a>
+  <a href="track-project.html" class="active"><i class="fa fa-calendar" aria-hidden="true"></i> Track Project</a>
+  <a href="updetes.html"><i class="fa fa-pencil-square" aria-hidden="true"></i> Updates</a>
+  <a class="logout" href="index.html"><i class="fa fa-sign-out-alt"></i> Logout</a>
+</aside>
+
+<!-- Main Content -->
+<main>
+    <div class="dashboard-content">
+
+        <!-- Section Title -->
+        <div class="section-header">
+          <h2>📊 Track Progress & Deadlines</h2>
+        </div>
+      
+        <!-- Projects Grid -->
+        <div class="projects-grid">
+      
+          <!-- Project Card -->
+          <div class="project-card">
+            <div class="card-header">
+              <h4>Project: E-commerce Website</h4>
+              <span class="notify">🔔 1</span>
+            </div>
+      
+            <div class="progress-bar">
+              <div class="track-progress" style="width:65%">65% Complete</div>
+            </div>
+      
+            <div class="details">
+              <p><strong>Start Date:</strong> Oct 12, 2023</p>
+              <p><strong>Due Date:</strong> Nov 25, 2023</p>
+            </div>
+      
+            <div class="milestones">
+              <p class="done">✔ Design Phase – Completed</p>
+              <p class="active">⏳ Development Phase – In Progress</p>
+            </div>
+      
+            <div class="alerts">
+              <div class="alert warning">🔔 2 Days Left</div>
+              <div class="alert danger">⚠ Testing Phase Overdue</div>
+            </div>
+      
+            <div class="card-footer">
+              <button class="btn">View Details →</button>
+            </div>
+          </div>
+      
+          <!-- Project Card -->
+          <div class="project-card">
+            <div class="card-header">
+              <h4>Project: Portfolio Website</h4>
+            </div>
+      
+            <div class="progress-bar">
+              <div class="track-progress" style="width:40%">40% Complete</div>
+            </div>
+      
+            <div class="details">
+              <p><strong>Start Date:</strong> Nov 01, 2023</p>
+              <p><strong>Due Date:</strong> Dec 15, 2023</p>
+            </div>
+      
+            <div class="milestones">
+              <p class="done">✔ Planning – Completed</p>
+              <p class="active">⏳ Design – In Progress</p>
+            </div>
+      
+            <div class="alerts">
+              <div class="alert info">ℹ On Schedule</div>
+            </div>
+      
+            <div class="card-footer">
+              <button class="btn">View Details →</button>
+            </div>
+          </div>
+      
+        </div>
+      
+      </div>
+</main>
+
+</body>
+</html>
